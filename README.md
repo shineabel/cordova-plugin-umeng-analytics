@@ -1,4 +1,5 @@
 # cordova-plugin-umeng-analytics
+集成了官方最新版本的SDK
 
 ##Requirements
 
@@ -37,8 +38,8 @@ MainActivity.java
  import com.umeng.commonsdk.UMConfigure; 
  import com.umeng.plugin.PGCommonSDK;
 
- @Override 
-      public void onResume() { 
+    @Override 
+     public void onResume() { 
         super.onResume();
         MobclickAgent.onResume(this);
      } 
