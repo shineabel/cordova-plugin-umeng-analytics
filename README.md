@@ -7,11 +7,11 @@
 
 ##Installation
 
-    cordova plugin add cordova-plugin-umeng-analytics  --variable UMENGKEYIOS=这里填写友盟key --variable UMENGKEYANDROID=这里填写友盟key
+    cordova plugin add cordova-plugin-umeng-analytics  --variable UMENGKEYIOS=ios_app_key --variable UMENGKEYANDROID=android_app_key
 
-##Antention
+##Attention
 For iOS:
-AppDelegate.m file:
+按照下面这样修改AppDelegate.m 文件:
 ```
 
  #import "UMCommonModule.h" 
@@ -32,7 +32,7 @@ AppDelegate.m file:
 ```
 
 For Android:
-MainActivity.java
+按照下面这样修改MainActivity.java文件
 ```
  import com.umeng.analytics.MobclickAgent; 
  import com.umeng.commonsdk.UMConfigure; 
