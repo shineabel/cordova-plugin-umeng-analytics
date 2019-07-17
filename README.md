@@ -1,16 +1,16 @@
-# cordova-plugin-jb-umenganalytics- 快速集成友盟统计的插件
+# cordova-plugin-umeng-analytics
 
 ##Requirements
 
- - IOS 7 or higher
+ - iOS 7 or higher
 
 ##Installation
 
-    cordova plugin add cordova-plugin-jb-umenganalytics  --variable UMENGKEYIOS=这里填写友盟key --variable UMENGKEYANDROID=这里填写友盟key
+    cordova plugin add cordova-plugin-umeng-analytics  --variable UMENGKEYIOS=这里填写友盟key --variable UMENGKEYANDROID=这里填写友盟key
 
 ##Antention
-For IOS:
-need add some code In AppDelegate.m file:
+For iOS:
+AppDelegate.m file:
 ```
 
  #import "UMCommonModule.h" 
@@ -31,6 +31,7 @@ need add some code In AppDelegate.m file:
 ```
 
 For Android:
+MainActivity.java
 ```
  import com.umeng.analytics.MobclickAgent; 
  import com.umeng.commonsdk.UMConfigure; 
@@ -61,10 +62,10 @@ For Android:
 
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
-        PGCommonSDK.setLogEnabled(true); 
+        UMConfigure.setLogEnabled(true); 
         PGCommonSDK.init(this,"具体key","Umeng",UMConfigure.DEVICE_TYPE_PHONE,"");
-        MobclickAgent.setSessionContinueMillis(1000);
-        MobclickAgent.setScenarioType(this, MobclickAgent.EScenarioType.E_DUM_NORMAL);
+        //MobclickAgent.setSessionContinueMillis(1000);
+        //MobclickAgent.setScenarioType(this, MobclickAgent.EScenarioType.E_DUM_NORMAL);
     }
 
  ``` 
