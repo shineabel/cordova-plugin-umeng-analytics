@@ -24,7 +24,7 @@ For iOS:
 {
     self.viewController = [[MainViewController alloc] init]; 
  [UMConfigure setLogEnabled:YES];
- [UMCommonModule initWithAppkey:@"具体key"channel:@"Umeng"]; 
+ [UMCommonModule initWithAppkey:@"具体key"channel:@"具体渠道"]; 
  [MobClick setScenarioType:E_UM_NORMAL];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }  
@@ -64,7 +64,7 @@ For Android:
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
         UMConfigure.setLogEnabled(true); 
-        PGCommonSDK.init(this,"具体key","Umeng",UMConfigure.DEVICE_TYPE_PHONE,"");
+        PGCommonSDK.init(this,"具体key","具体渠道",UMConfigure.DEVICE_TYPE_PHONE,"");
         //MobclickAgent.setSessionContinueMillis(1000);
         //MobclickAgent.setScenarioType(this, MobclickAgent.EScenarioType.E_DUM_NORMAL);
     }
