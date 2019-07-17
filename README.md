@@ -10,7 +10,7 @@
     cordova plugin add cordova-plugin-umeng-analytics  --variable UMENGKEYIOS=ios_app_key --variable UMENGKEYANDROID=android_app_key
 
 ##Attention
-For iOS:
+iOS:
 按照下面这样修改AppDelegate.m 文件:
 ```
 
@@ -31,7 +31,7 @@ For iOS:
 @end
 ```
 
-For Android:
+Android:
 按照下面这样修改MainActivity.java文件
 ```
  import com.umeng.analytics.MobclickAgent; 
