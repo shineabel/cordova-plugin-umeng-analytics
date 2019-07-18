@@ -1,44 +1,49 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-umeng-analytics" version="1.3.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordova-plugin-umeng-analytics</name>
+<plugin id="cordova-plugin-umeng-analytics" version="1.3.2"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>cordova-plugin-umeng-analytics</name>
 
-    <preference name="UMENGKEYIOS" />
-    <preference name="UMENGKEYANDROID" />
+	<preference name="UMENGKEYIOS" />
+	<preference name="UMENGKEYANDROID" />
 
-    <js-module name="analyticssdk" src="www/analyticssdk.js">
-        <clobbers target="AnalyticsAgent" />
-    </js-module>
+	<js-module name="analyticssdk" src="www/analyticssdk.js">
+		<clobbers target="AnalyticsAgent" />
+	</js-module>
 
-     <platform name="android">    
-        <config-file target="res/xml/config.xml" parent="/*">  
-              <feature name="AnalyticsSDK">    
-                <param name="android-package" value="com.umeng.plugin.AnalyticsSDK"/>    
-              </feature>  
-        </config-file> 
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="AnalyticsSDK">
+				<param name="android-package"
+					value="com.umeng.plugin.AnalyticsSDK" />
+			</feature>
+		</config-file>
 
-        <source-file src="src/android/AnalyticsSDK.java" target-dir="src/com/umeng/plugin"/>
-        <source-file src="src/android/PGCommonSDK.java" target-dir="src/com/umeng/plugin"/>    
-        
-        <lib-file src="src/android/libs/umeng-analytics-8.0.0.jar" />
-        <lib-file src="src/android/libs/umeng-common-2.0.1.jar" />
-    </platform>
+		<source-file src="src/android/AnalyticsSDK.java"
+			target-dir="src/com/umeng/plugin" />
+		<source-file src="src/android/PGCommonSDK.java"
+			target-dir="src/com/umeng/plugin" />
 
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="AnalyticsSDK">
-                <param name="ios-package" value="AnalyticsSDK"/>
-            </feature>
-        </config-file>
+		<lib-file src="src/android/libs/umeng-analytics-8.0.0.jar" />
+		<lib-file src="src/android/libs/umeng-common-2.0.1.jar" />
+	</platform>
 
-        <header-file src="src/ios/AnalyticsSDK.h" />
-        <source-file src="src/ios/AnalyticsSDK.m" />
-        <header-file src="src/ios/UMCommonModule.h" />
-        <source-file src="src/ios/UMCommonModule.m" />
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="AnalyticsSDK">
+				<param name="ios-package" value="AnalyticsSDK" />
+			</feature>
+		</config-file>
 
-        <framework src="src/ios/UMAnalytics.framework" custom="true" />
-        <framework src="src/ios/UMCommon.framework" custom="true" />
-        <framework src="libz.tbd" weak="true" />
-        <framework src="libsqlite3.0.tbd" weak="true" />
+		<header-file src="src/ios/AnalyticsSDK.h" />
+		<source-file src="src/ios/AnalyticsSDK.m" />
+		<header-file src="src/ios/UMCommonModule.h" />
+		<source-file src="src/ios/UMCommonModule.m" />
 
-    </platform>    
+		<framework src="src/ios/UMAnalytics.framework" custom="true" />
+		<framework src="src/ios/UMCommon.framework" custom="true" />
+		<framework src="libz.tbd" weak="true" />
+		<framework src="libsqlite3.0.tbd" weak="true" />
+
+	</platform>
 </plugin>
