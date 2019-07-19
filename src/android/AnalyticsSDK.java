@@ -58,7 +58,7 @@ public class AnalyticsSDK extends CordovaPlugin {
         Log.d("UMPlugin", "execute action:" + action + "|||args:" + args);
      
         String[] deviceInfo = UMConfigure.getTestDeviceInfo(mContext);
-        Log.d("UMPlugin","device id:" + deviceInfo[0] + ", ddvice mac:" + deviceInfo[1]);
+        Log.d("UMPlugin","{\"device_id\":\"" + deviceInfo[0] + "\",\"mac\":\"" + deviceInfo[1] + "\"}");
         if (action.equals("onEvent")) {
             String eventId = args.getString(0);
             MobclickAgent.onEvent(mContext, eventId);
