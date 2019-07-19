@@ -107,11 +107,13 @@ public class AnalyticsSDK extends CordovaPlugin {
             return true;
         } else if (action.equals("onPageBegin")) {
             String pageName = args.getString(0);
+            Log.d("UMPlugin onPageStart page name:", pageName);
             MobclickAgent.onPageStart(pageName);
             return true;
         } else if (action.equals("onPageEnd")) {
             String pageName = args.getString(0);
             MobclickAgent.onPageEnd(pageName);
+            Log.d("UMPlugin onPageEnd page name:", pageName);
             return true;
         } else if (action.equals("getDeviceId")) {
             try {
