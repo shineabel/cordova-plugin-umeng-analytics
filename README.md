@@ -73,7 +73,7 @@ Android:
  ``` 
  ```
 持续集成建议：
-在Cordova-Android （Cordova-iOS）自动生成MainActivity (AppDelegate.m)文件后，采用事先准备好的文件覆盖掉自动生成的即可
+在Cordova-Android （Cordova-iOS）自动生成MainActivity (AppDelegate.m)文件后，用事先准备好的文件覆盖掉自动生成的即可
 ```
 使用
 ```
