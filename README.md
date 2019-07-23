@@ -86,7 +86,7 @@ if(AnalyticsAgent){
     
 }
 
-自定义事件埋点：(注意现在Umeng官网上注册事件)
+自定义事件埋点：(注意要事先在Umeng官网上注册好事件，然后才能看到数据)
  if (AnalyticsAgent){
     AnalyticsAgent.onEventWithParameters(
         umEvent,
