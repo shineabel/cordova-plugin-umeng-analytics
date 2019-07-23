@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 import android.content.Context;
 import android.util.Log;
 import com.umeng.commonsdk.UMConfigure;
+import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created by wangfei on 17/9/28.
@@ -15,6 +16,7 @@ public class PGCommonSDK {
     public static void init(Context context, String appkey, String channel, int type, String secret){
         initCocos("phonegap","2.0");
         UMConfigure.init(context,appkey,channel,type,secret);
+        MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.LEGACY_MANUAL);
     }
     public static void initCocos(String v,String t){
 
