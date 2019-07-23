@@ -75,3 +75,26 @@ Android:
 持续集成建议：
 在Cordova-Android （Cordova-iOS）自动生成MainActivity (AppDelegate.m)文件后，采用事先准备好的文件覆盖掉自动生成的即可
 ```
+使用
+```
+页面访问路径：注意一定要成对调用，不能交叉，必须要onPageBegin A -> onPageEnd A 后才能开始下一个页面onPageBegin B -> onPageEnd B
+if(AnalyticsAgent){
+        AnalyticsAgent.onPageBegin(pageName,successCallbak,errorCallback);
+}
+if(AnalyticsAgent){
+        AnalyticsAgent.onPageEnd(pageName,successCallbak,errorCallback);
+    
+}
+
+自定义事件埋点：
+ if (AnalyticsAgent){
+    AnalyticsAgent.onEventWithParameters(
+        umEvent,
+        {key1:value1, key2:value2}, 
+    function () {
+        console.log("custom event success"）;
+    }, function (reason) {
+        console.error("custom event failed: " + reason);
+    });
+}
+```
