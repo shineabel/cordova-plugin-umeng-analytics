@@ -1,5 +1,9 @@
 # cordova-plugin-umeng-analytics
-集成了官方最新版本的SDK
+集成了官方最新版本的SDK v8.0.0,github上很多旨在封装此功能的plugin都不能正常工作,
+请注意看此插件PGCommonSDK中对官方init方法的修改，加上了
+```$xslt
+MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.LEGACY_MANUAL);
+```
 
 ##Requirements
 
