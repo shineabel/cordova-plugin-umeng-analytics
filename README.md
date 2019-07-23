@@ -86,7 +86,7 @@ if(AnalyticsAgent){
     
 }
 
-自定义事件埋点：
+自定义事件埋点：(注意现在Umeng官网上注册事件)
  if (AnalyticsAgent){
     AnalyticsAgent.onEventWithParameters(
         umEvent,
