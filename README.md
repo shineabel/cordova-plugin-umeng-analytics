@@ -1,6 +1,6 @@
 # cordova-plugin-umeng-analytics
-集成了官方最新版本的SDK v8.0.0,github上很多旨在封装此功能的plugin都不能正常工作,
-请注意看此插件PGCommonSDK中对官方init方法的修改，加上了
+此插件集成了Umeng官方最新版本的SDK v8.0.0,github上很多旨在封装此功能的plugin都不能正常工作,尤其是Android（请注意看此插件Android部分PGCommonSDK中对官方init方法的修改，加上了下面这一句：
+Cordova生成的App只有唯一的一个Activity，需要手动统计。）
 ```$xslt
 MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.LEGACY_MANUAL);
 ```
@@ -15,7 +15,7 @@ MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.LEGACY_MANUAL);
 
 ##Attention
 iOS:
-按照下面这样修改AppDelegate.m 文件:
+按照下面这样修改cordova-ios 自动生成的AppDelegate.m 文件:
 ```
 
  #import "UMCommonModule.h" 
@@ -36,7 +36,7 @@ iOS:
 ```
 
 Android:
-按照下面这样修改Cordova自动生成的MainActivity.java文件
+按照下面这样修改Cordova-android自动生成的MainActivity.java文件
 ```
  import com.umeng.analytics.MobclickAgent; 
  import com.umeng.commonsdk.UMConfigure; 
@@ -77,11 +77,11 @@ Android:
  ``` 
  ```
 持续集成建议：
-在Cordova-Android （Cordova-iOS）自动生成MainActivity (AppDelegate.m)文件后，用事先准备好的文件覆盖掉自动生成的即可
+在Cordova-Android （Cordova-iOS）自动生成MainActivity (AppDelegate.m)文件后，用事先准备好的文件覆盖掉（cp）自动生成的即可
 ```
 使用
 ```
-页面访问路径：注意一定要成对调用，不能交叉，必须要onPageBegin A -> onPageEnd A 后才能开始下一个页面onPageBegin B -> onPageEnd B
+页面访问路径：注意一定要成对的线性调用，不能交叉，必须要onPageBegin A -> onPageEnd A 后才能开始下一个页面onPageBegin B -> onPageEnd B
 if(AnalyticsAgent){
         AnalyticsAgent.onPageBegin(pageName,successCallbak,errorCallback);
 }
