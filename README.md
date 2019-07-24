@@ -82,7 +82,7 @@ Android:
 使用
 ```
 let pageName = "PageA";
-let successCallbak = function()
+let successCallbak = function(){}
 let errorCallback = function(){}
 页面访问路径：注意一定要成对的线性调用，不能交叉，必须要onPageBegin A -> onPageEnd A 后才能开始下一个页面onPageBegin B -> onPageEnd B
 if(AnalyticsAgent){
