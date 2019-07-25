@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e0ab28e-32d2-4293-bfe2-3b3c7991f93b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/plugin.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,34 +15,33 @@
     <session id="84653615">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.12" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="1" />
           <entry key="h" value="7" />
-          <entry key="java" value="8" />
+          <entry key="java" value="6" />
           <entry key="js" value="1" />
           <entry key="json" value="2" />
           <entry key="m" value="5" />
-          <entry key="md" value="4" />
+          <entry key="md" value="2" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Arma.Header" value="7" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="6" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="4" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="3" />
         </counts>
@@ -52,7 +52,7 @@
           <entry key="java" value="166" />
           <entry key="json" value="7" />
           <entry key="m" value="2" />
-          <entry key="md" value="811" />
+          <entry key="md" value="625" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
@@ -60,7 +60,7 @@
         <counts>
           <entry key="JAVA" value="166" />
           <entry key="JSON" value="7" />
-          <entry key="Markdown" value="811" />
+          <entry key="Markdown" value="625" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="5" />
         </counts>
@@ -69,7 +69,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/android/AnalyticsSDK.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
@@ -84,8 +84,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="135">
+              <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6270">
+              <caret line="418" selection-start-line="418" selection-end-line="418" />
             </state>
           </provider>
         </entry>
@@ -107,11 +116,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>[UMConfigure</find>
-      <find>UMENGKEYANDROID</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/ios</dir>
-      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -123,12 +130,13 @@
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/www/analyticssdk.js" />
+        <option value="$PROJECT_DIR$/src/android/AnalyticsSDK.java" />
         <option value="$PROJECT_DIR$/test1/Test.java" />
         <option value="$PROJECT_DIR$/src/android/PGCommonSDK.java" />
-        <option value="$PROJECT_DIR$/src/ios/UMCommonModule.m" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/ios/UMCommonModule.m" />
         <option value="$PROJECT_DIR$/plugin.xml" />
-        <option value="$PROJECT_DIR$/src/android/AnalyticsSDK.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -162,6 +170,11 @@
             <path>
               <item name="cordova-plugin-umeng-analytics" type="b2602c69:ProjectViewProjectNode" />
               <item name="cordova-plugin-umeng-analytics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cordova-plugin-umeng-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cordova-plugin-umeng-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cordova-plugin-umeng-analytics" type="b2602c69:ProjectViewProjectNode" />
@@ -253,7 +266,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564021571177" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564025218499" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -287,15 +300,12 @@
       <workItem from="1563412882113" duration="6073000" />
       <workItem from="1563676679109" duration="1640000" />
       <workItem from="1563708053114" duration="2990000" />
-      <workItem from="1563841059536" duration="12855000" />
-      <workItem from="1563939727709" duration="1181000" />
-      <workItem from="1563944994715" duration="1760000" />
-      <workItem from="1564020756303" duration="751000" />
+      <workItem from="1563841059536" duration="11356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38973000" />
+    <option name="totallyTimeSpent" value="34533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="827" extended-state="0" />
@@ -363,38 +373,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/AnalyticsSDK.h">
+    <entry file="file://$PROJECT_DIR$/src/android/AnalyticsSDK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="419">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/AnalyticsSDK.m">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/UMCommon.framework/Headers/UMCommon.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/UMCommonModule.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/UMAnalytics.framework/Headers/MobClick.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/UMCommon.framework/Headers/UMConfigure.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ios/UMCommon.framework/Versions/A/Headers/UMCommon.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/android/PGCommonSDK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
+        <state relative-caret-position="269">
           <caret line="19" column="82" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -412,20 +403,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/src/ios/UMCommon.framework/Headers/UMConfigure.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ios/UMCommon.framework/Versions/A/Headers/UMCommon.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ios/AnalyticsSDK.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        <state relative-caret-position="285">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/android/AnalyticsSDK.java">
+    <entry file="file://$PROJECT_DIR$/src/ios/AnalyticsSDK.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ios/UMCommon.framework/Headers/UMCommon.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ios/UMAnalytics.framework/Headers/MobClick.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1487" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ios/UMCommonModule.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="61" lean-forward="true" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6270">
+          <caret line="418" selection-start-line="418" selection-end-line="418" />
         </state>
       </provider>
     </entry>
