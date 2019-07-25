@@ -11,7 +11,14 @@ MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.LEGACY_MANUAL);
 
 ##Installation
 
-    cordova plugin add cordova-plugin-umeng-analytics  --variable UMENGKEYIOS=ios_app_key --variable UMENGKEYANDROID=android_app_key
+命令行安装：
+```
+cordova plugin add https://github.com/shineabel/cordova-plugin-umeng-analytics
+```
+或者cordova项目的config.xml
+```
+    <plugin name="cordova-plugin-umeng-analytics" spec="git+https://github.com/shineabel/cordova-plugin-umeng-analytics.git" />
+```
 
 ##Attention
 iOS:
@@ -71,7 +78,7 @@ Android:
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
         UMConfigure.setLogEnabled(true); 
-        PGCommonSDK.init(this,"your key","your channel",UMConfigure.DEVICE_TYPE_PHONE,"");
+        PGCommonSDK.init(this,"your key","your channel",UMConfigure.DEVICE_TYPE_PHONE,"");//初始化SDK
     }
 
  ``` 

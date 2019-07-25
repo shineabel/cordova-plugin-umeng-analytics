@@ -4,9 +4,6 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>cordova-plugin-umeng-analytics</name>
 
-	<!--<preference name="UMENGKEYIOS" />-->
-	<!--<preference name="UMENGKEYANDROID" />-->
-
 	<js-module name="analyticssdk" src="www/analyticssdk.js">
 		<clobbers target="AnalyticsAgent" />
 	</js-module>
