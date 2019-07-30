@@ -5,11 +5,11 @@ Cordova生成的App只有唯一的一个Activity，需要手动统计。）
 MobclickAgent.setPageCollectionMode(MobclickAgent.PageMode.LEGACY_MANUAL);
 ```
 
-##Requirements
+#Requirements
 
  - iOS 7 or higher
 
-##Installation
+#Installation
 
 命令行安装：
 ```
@@ -20,7 +20,7 @@ cordova plugin add https://github.com/shineabel/cordova-plugin-umeng-analytics
     <plugin name="cordova-plugin-umeng-analytics" spec="git+https://github.com/shineabel/cordova-plugin-umeng-analytics.git" />
 ```
 
-##Attention
+#Attention
 iOS:
 按照下面这样修改cordova-ios 自动生成的AppDelegate.m 文件:
 ```
@@ -86,15 +86,18 @@ Android:
 持续集成建议：
 在Cordova-Android （Cordova-iOS）自动生成MainActivity (AppDelegate.m)文件后，用事先准备好的文件覆盖掉（cp）自动生成的即可
 ```
-使用
+#使用
 ```
+页面访问路径：注意一定要成对的线性调用，不能交叉，必须要onPageBegin A -> onPageEnd A 后才能开始下一个页面onPageBegin B -> onPageEnd B
+
 let pageName = "PageA";
 let successCallbak = function(){}
 let errorCallback = function(){}
-页面访问路径：注意一定要成对的线性调用，不能交叉，必须要onPageBegin A -> onPageEnd A 后才能开始下一个页面onPageBegin B -> onPageEnd B
+//进入页面时
 if(AnalyticsAgent){
         AnalyticsAgent.onPageBegin(pageName,successCallbak,errorCallback);
 }
+//离开页面时
 if(AnalyticsAgent){
         AnalyticsAgent.onPageEnd(pageName,successCallbak,errorCallback);
     
